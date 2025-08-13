@@ -4,3 +4,8 @@ export interface Todo {
   completed: boolean;
   createdAt: string;
 }
+
+export interface TodosState {
+  list: Todo[];
+  filter: "all" | "completed" | "pending";
+}
